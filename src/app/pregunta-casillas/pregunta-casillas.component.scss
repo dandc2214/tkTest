@@ -1,0 +1,31 @@
+.input-50-width {
+    width: 50%;
+}
+
+.input-full-width {
+    width: 100%;
+}
+
+.custom {
+    .mat-checkbox {
+        width: 100%;
+        .mat-checkbox-layout {
+            width: 100%;
+        }
+    }
+    .mat-checkbox-label{
+        width: 100%
+    }
+    label.mat-checkbox-layout{
+        width: 100%;
+    }
+    // .mat-checkbox-layout {
+    //     width: 1000px;
+    // }
+}
+
+.border{
+    border: solid 1px #eee;
+    margin: 12px 12px;
+    padding: 5px;
+}

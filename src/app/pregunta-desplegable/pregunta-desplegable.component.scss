@@ -1,0 +1,15 @@
+.input-50-width{
+    width: 50%;
+}
+.input-full-width{
+    width: 100%;
+}
+
+.rowDisplay{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: solid 1px #eee;
+    margin: 12px 12px;
+    padding: 5px;
+}

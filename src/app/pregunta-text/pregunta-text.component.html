@@ -1,0 +1,8 @@
+<div class="border">
+  <mat-form-field class="input-full-width">
+    <input matInput placeholder="Titulo de la pregunta" [(ngModel)]="title">
+    <button mat-button *ngIf="title" matSuffix mat-icon-button aria-label="Clear" (click)="title=''">
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-form-field>
+</div>

@@ -1,0 +1,18 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 10% 20% 20% 20% 20% 10%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+.container{
+    grid-column: 2/6;
+}
+
+.tabs{
+    display: flex;
+    justify-content: space-around;
+}
+
+.border{
+    border: solid 1px #eee;
+}

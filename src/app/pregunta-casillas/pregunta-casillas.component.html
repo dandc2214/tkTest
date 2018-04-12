@@ -1,0 +1,26 @@
+<div class="custom border">
+  <mat-form-field class="input-50-width">
+    <input matInput placeholder="Titulo de la pregunta" [(ngModel)]="title">
+    <button mat-button *ngIf="title" matSuffix mat-icon-button aria-label="Clear" (click)="title=''">
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-form-field>
+
+  <mat-list role="list" class="input-50-width">
+    <mat-list-item role="listitem" *ngFor="let option of options; let index = index; trackBy:trackByFn">
+      <mat-checkbox [disabled]="true">
+        <mat-form-field class="input-full-width">
+          <input matInput [(ngModel)]="options[index]">
+        </mat-form-field>
+      </mat-checkbox>
+      <div *ngIf="options.length > 1">
+        <mat-icon mat-list-icon (click)="removeOption(index)">
+          delete
+        </mat-icon>
+      </div>
+    </mat-list-item>
+    <mat-list-item role="listitem">
+      <button mat-button (click)="addOption('Opcion')">Agregar</button>
+    </mat-list-item>
+  </mat-list>
+</div>
